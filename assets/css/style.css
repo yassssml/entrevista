@@ -1,0 +1,150 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+
+.banner {
+    background: url('../img/ambiente.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+}
+
+
+.home-content {
+    padding: 30px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+
+.sobre {
+    padding: 30px;
+}
+
+.sobre .foto {
+    width: 250px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+
+.entrevista {
+    padding: 30px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+
+.formulario {
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #444;
+}
+
+
+.galeria {
+    padding: 30px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid img {
+    width: 280px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner {
+        font-size: 1.1rem;
+        padding: 80px 20px;
+    }
+
+    .grid img {
+        width: 90%;
+    }
+}
